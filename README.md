@@ -11,4 +11,4 @@ Compose a draft of FinalProject proposal in README.md of your FinalProject repo 
 
 This is the past "creative documentation" project.
 https://drive.google.com/a/risd.edu/file/d/0BwlWc3IuPPmpSDV6eTJpNDNVOFU/view?usp=sharing
-http://drive.google.com/uc?export=view&id=0BwlWc3IuPPmpSDV6eTJpNDNVOFU
+
