@@ -8,9 +8,9 @@ Final Project- Compose a draft of FinalProject proposal in README.md of your Fin
 - Therefore, the website would be a mixture of my personal notes: including diaries to notes about inspirational artists and their work; plus my own portfolio. 
 - The initial view of the website will include both of those sections, while it’s possible to separate them if the view wants to. 
 
-<p>This is the past "creative documentation" project.</p>
+This is the past "creative documentation" project.
 https://drive.google.com/a/risd.edu/file/d/0BwlWc3IuPPmpSDV6eTJpNDNVOFU/view?usp=sharing
 
-<p>Sketch</p>
+Sketch
 https://drive.google.com/a/risd.edu/file/d/0BwlWc3IuPPmpejJOWlp5UFpDVlk/view?usp=sharing
 
