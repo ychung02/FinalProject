@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Alice</title>
-	<style type="text/css">
 	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 	<meta charset="utf-8">
+	<title>Alice</title>
+	<style>
+	
 
-	body{background-color: white;}
-	.logo{
-		text-align: center;
-		margin-top: 300px;
-		margin-bottom: 500px;}
+	body{margin:0;border:0;padding:0;}
+   
+   	.front{
+   	display: table-cell;
+    background-color:white;
+    height:100vh;
+    width: 500vh;
+    vertical-align: middle;
+    text-align: center;
+	}
+	
+	.logo{display: inline-block;text-align: center;}
 
 	.work{
 		height: 1000px;
@@ -53,9 +61,11 @@
 
 </head>
 <body>
+<div class="front">
 <div class="logo">
 <a href="http://hksun93.github.io/FinalProject/index2"> 
 <img src="https://38.media.tumblr.com/4076ae162f7fe2a6f15f622569b5d6c1/tumblr_nm0dfrvrEP1urb2f8o1_1280.gif" width="90px"></a>
+</div>
 </div>
 
 <div class="work">
@@ -75,7 +85,7 @@
     <script>
 var selected = null, 
     x_pos = 0, y_pos = 0, 
-    x_elem = 0, y_elem = 0;
+    x_elem = 0, y_elem = 0; 
 
 function _drag_init(elem) {
     selected = elem;
@@ -107,5 +117,4 @@ document.onmouseup = _destroy;
 	</script>
 
 </body>
-
 	
