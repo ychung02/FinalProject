@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-	<meta charset="utf-8">
-	<title>Alice</title>
-	<style>
-	
+  <meta charset="utf-8">
+  <title>Alice</title>
+  
+  <style>
+
 
 	body{margin:0;border:0;padding:0;}
    
@@ -26,7 +26,13 @@
 		background-size: cover;
 		position: relative;
 	}
-	[draggable=true] {cursor:move;}
+	.work1{
+		height: 1000px;
+		background-image: url("https://40.media.tumblr.com/64afb227b25f6c7feaf4a1cb089a35fb/tumblr_nmsxfsPK3f1urb2f8o1_1280.jpg");
+		background-size: cover;
+		position: relative;
+	}
+	
 
 	.words{
 		position: absolute;
@@ -35,7 +41,7 @@
 		top: 100px;
 		opacity: .7;
 		background-color: white;
-		width: 400px; height: 650px;
+		width: 400px; height: 576px;
 		z-index: 1;
 		
 	}
@@ -51,16 +57,23 @@
 
 	p.blah{padding-left: 25px; padding-top: 15px; padding-right: 25px; padding-bottom: 15px; font-family: "Trebuchet MS"; font-size: 9pt; line-height: 150%;color:rgba(0,0,0,1);} 
 
-	#draggable-element {
-		cursor:move;
-		position:relative; }
+	.ui{cursor:move;position: absolute;display:inline-block;}
 
-
+		#object{left:300px;top:300px;
+		width:400px;height:559px;border:20px solid yellow;}
+		#object1{left:300px;top:200px;
+		width:400px;height:624px;border:20px solid black;}
+		#abyssNote img{width:100px;height: 100px;} 
+		#abyssNote{left:50px;top:50px;}
 	
-	</style>
 
+
+  </style>
+
+  
 </head>
 <body>
+ 
 <div class="front">
 <div class="logo">
 <a href="http://hksun93.github.io/FinalProject/index2"> 
@@ -68,53 +81,44 @@
 </div>
 </div>
 
+<div class="work1">
+	<div id="draggable2" class="ui">
+	<div class="wordss">
+	<p class="blah">Title: Self Portrait</p>
+	<p class="blah">Software: Rhino 3D, Adobe Illustrator CS</p>
+	<p class="blah">Description: What's the border between fine art and design? Under the guidance of professor Kai Franz, students were asked to do figure croquis with Rhino 3D. Rhino 3D is a software that is generally used for industrial design or architecture, however, Kai broken that boundary and allowed Alice to experience digital art in a new way. After that, instead of painting, which she was originally planing to major in, she decided to go for graphic design; because she found a infinite possibilities in using computer not only as a mere tool, but also as the most flexible medium.</p>
+	<p class="blah">3D file that scanned head to upper body was given to every student in the class (how is done is Kai's secret), then we're asked to make self portrait out of it. Self portrait was always an interesting subject to Alice. She thinks it requires a process of look deep inside of oneself - into the abyss that everyone has.</p>
+	</div>
+	<div class="words"></div>	
+</div>
+<div id="draggable3" class="ui">
+ <div id="object1" class="ui"><img src="https://41.media.tumblr.com/1e02fbd5efe9addde2721c6f3686901c/tumblr_nmsx560ZZx1urb2f8o1_1280.jpg" width="400px"></div>
+</div>
+<div id="abyssNote" class="ui"><img src="https://40.media.tumblr.com/dfa1424486bbcd2c3b900c4ed38bedd8/tumblr_nmsx560ZZx1urb2f8o2_r1_250.jpg"></div>
+</div>
+
 <div class="work">
-	<div id="draggable-element">
+	<div id="draggable" class="ui">
 	<div class="wordss">
 	<p class="blah">Title: Collage "Zero-gravity"</p>
 	<p class="blah">Software: Rhino 3D, Adobe Illustrator CS</p>
 	<p class="blah">Description: What's the border between fine art and design? Under the guidance of professor Kai Franz, students were asked to do figure croquis with Rhino 3D. Rhino 3D is a software that is generally used for industrial design or architecture, however, Kai broken that boundary and allowed Alice to experience digital art in a new way. After that, instead of painting, which she was originally planing to major in, she decided to go for graphic design; because she found a infinite possibilities in using computer not only as a mere tool, but also as the most flexible medium.</p>
 	<p class="blah">As a final form, all the 8 croquis were used to create a 24 in. x 34 in. collage poster. It went through three fundamental process that she found through her RISD foundation year, which is 'understanding-deconstructing-reconstructing' a subject.  The experience of discovering the new aspects of digital art became her 'understanding' part, and via 'deconstructing' and 'reconstructing' those existing images, she ended up with this abstract collage. It contains her idea of how digital mediums are eligible of liberating artists from numerous limitations, from 'gravity' = realistic obstacles. </p>
 	</div>
-	<div class="words"></div>
+	<div class="words"></div>	
+</div>
+<div id="draggable1" class="ui">
+ <div id="object" class="ui"><img src="https://40.media.tumblr.com/d886cdcf4cfb773cf960229a97227788/tumblr_nm1lalZYNr1urb2f8o1_1280.jpg" width="400px"></div>
 </div>
 </div>
-
-	<script src="http://code.jquery.com/jquery-2.1.3.min.js">
-    </script>
-    <script>
-var selected = null, 
-    x_pos = 0, y_pos = 0, 
-    x_elem = 0, y_elem = 0; 
-
-function _drag_init(elem) {
-    selected = elem;
-    x_elem = x_pos - selected.offsetLeft;
-    y_elem = y_pos - selected.offsetTop;
-}
-
-function _move_elem(e) {
-    x_pos = document.all ? window.event.clientX : e.pageX;
-    y_pos = document.all ? window.event.clientY : e.pageY;
-    if (selected !== null) {
-        selected.style.left = (x_pos - x_elem) + 'px';
-        selected.style.top = (y_pos - y_elem) + 'px';
-    }
-}
-
-function _destroy() {
-    selected = null;
-}
-
-document.getElementById('draggable-element').onmousedown = function () {
-    _drag_init(this);
-    return false;
-};
-
-document.onmousemove = _move_elem;
-document.onmouseup = _destroy;
-            
-	</script>
+ 
+   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( ".ui" ).draggable();
+  });
+  </script>
 
 </body>
-	
+</html>
