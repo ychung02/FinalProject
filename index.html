@@ -7,15 +7,21 @@
   <style>
 
 
-	body{margin:0;border:0;padding:0;height:100%;}
+	body{margin:0;border:0;padding:0;background-color: white;}
+
+	.top{position:fixed;z-index: 1000; right:3%;top:95%;}
    
+   	.thumnails{position:fixed;height:100vh;
+    width: 500vh;}
+
    	.front{
    	display: table-cell;
-    background-color:white;
+    background-color:trasparent;
     height:100vh;
     width: 500vh;
     vertical-align: middle;
     text-align: center;
+    z-index: 2
 	}
 	
 	.logo{display: inline-block;text-align: center;}
@@ -24,11 +30,20 @@
 		height: 1000px;
 		background-size: cover;
 		position: relative;
+		z-index: 10;
 	}
 	
 	#work{background-image: url("http://students.risd.edu/students/hsun01/0.zero2000.jpg");}
 	#work1{background-image: url("http://students.risd.edu/students/hsun01/1.abyss2000.jpg");}
 	#work2{background-image: url("http://students.risd.edu/students/hsun01/2.homage2000.jpg");}
+	#work3{background-image: url("http://students.risd.edu/students/hsun01/3.alphabet2000.jpg");}
+	#work4{background-image: url("http://students.risd.edu/students/hsun01/4.koar2000.jpg");}
+	#work5{background-image: url("http://students.risd.edu/students/hsun01/5.muriel2000.jpg");}
+	#work6{background-image: url("http://students.risd.edu/students/hsun01/6.graphis2000.jpg");}
+	#work7{background-image: url("http://students.risd.edu/students/hsun01/7.utc2000.jpg");}
+	#work8{background-image: url("http://students.risd.edu/students/hsun01/8.leo2000.jpg");}
+	#work9{background-image: url("http://students.risd.edu/students/hsun01/9.toilet2000.jpg");}
+	#work10{background-image: url("http://students.risd.edu/students/hsun01/10.diary2000.jpg");}
 	
 
 	.words{
@@ -61,34 +76,99 @@
 		#object1{left:300px;top:200px;
 		width:400px;height:624px;border:20px solid black;}
 		#object2,#object2_2,#object2_3{width:400px;height:193px;border:20px solid rgb(0,255,0);}#object2{left:300px;top:150px;}#object2_2{left:400px;top:350px;}#object2_3{left:500px;top:550px;}
+		#object3{left:300px;top:200px;
+		width:400px;height:400px;border:20px solid black;}
+		#object4,#object4_1,#object4_2,#object4_3{width:400px;height:259px;border:20px solid rgb(233,215,179);}#object4{left:371px;top:20px;}#object4_1{left:792px;top:77px;}#object4_2{left:657px;top:486px;}#object4_3{left:438px;top:300px;}
+		#object5,#object5_1{width:400px;height:100px;border:20px solid rgb(0,100,244);}#object5{left:0px;top:56px;}#object5_1{left:440px;top:196px;}
+		#object6{left:430px;top:30px;
+		width:400px;height:800px;border:20px solid red;}
+		#object7,#object7_1{width:400px;height:784px;border:20px solid rgb(102, 204, 255);}#object7{left:430px;top:40px;}#object7_1{left: 508px; top: 128px;}
+		#object8{left:380px;top:308px;
+		width:400px;height:222px;border:20px solid cyan;}
+		#object9,#object9_1{width:400px;height:253px; border:20px solid rgb(71, 71, 71)}#object9{left:340px;top:190px;}#object9_1{left: 447px; top:444px;}
+		#object10{width:400px;height:301px;border:20px solid magenta;left:430px;top:175px;}
+
 
 
 		.notes img{width:100px;position:relative;} 
-		.notes{
+		.notes,.thum{
 			width:100px;height:100px;border: 1px solid black; 
-			overflow:hidden; position: absolute;text-align: center;background-color: white;display: block;
+			overflow:hidden; position: absolute;text-align: 
+			center;background-color: white;display: block;
 			}
-			#zeroNote{top:50px;left:800px;}
-			#zeroNote1{top:200px;left:1000px;}
-			#zeroNote2{top:300px;left:1100px;}
-			#zeroNote3{top:400px;left:900px;}
-			#zeroNote4{top:450px;left:950px;}
-			#zeroNote5{top:700px;left:150px;}
-			#zeroNote6{top:600px;left:50px;}
-			#zeroNote7{top:620px;left:900px;}
-			#zeroNote8{top:120px;left:950px;opacity: .3;}
-			#abyssNote{top: 700px;left:50px;}
-			#abyssNote1{top: 800px;left:170px;}
-			#abyssNote2{top:10px;left:30px;}
-			#abyssNote3{top: 20px;left:900px;opacity: .3}
-			#abyssNote4{top: 50px;left:990px;opacity: .3}
-			#abyssNote5{top: 600px;left:980px;opacity: .3}
+			#note{top:83%;right:2%;opacity: .3;}
+			#note0{top:10px;right:90%;}#note0 img{width:100px;}
+			#note1{top:115px;right:90%;}#note1 img{width:100px;}
+			#note2{top:220px;right:90%;}#note2 img{height:100px;}
+			#note3{top:10px;right:80%;}#note3 img{width:100px;}
+			#note4{top:115px;right:80%;}#note4 img{height:100px;}
+			#note5{top:325px;right:80%;}#note5 img{width:100px;}
+			#note6{top:430px;right:80%;}#note6 img{width:100px;}
+			#note7{top:10px;right:70%;}#note7 img{width:100px;}
+			#note8{top:220px;right:80%;}#note8 img{height:100px;}
+			#note9{top:115px;right:70%;}#note9 img{height:100px;}
+			#note10{top:220px;right:70%;}#note10 img{width:200px;}
+			#zeroNote{top:50px;right:13%;}
+			#zeroNote1{top:200px;right:16%%;}
+			#zeroNote2{top:300px;right:18%%;}
+			#zeroNote3{top:400px;right:22%;}
+			#zeroNote4{top:450px;right:2%;}
+			#zeroNote5{top:700px;right:10%;}
+			#zeroNote6{top:600px;right:5%;}
+			#zeroNote7{top:620px;right:28%;}
+			#zeroNote8{top:120px;right:3%;opacity: .3;}
+			#abyssNote{top: 700px;right:50px;}
+			#abyssNote1{top: 800px;right:170px;}
+			#abyssNote2{top:12%;right:1%;}
+			#abyssNote3{top: 20px;right:900px;opacity: .3}
+			#abyssNote4{top: 4%;right:3%;opacity: .3}
+			#abyssNote5{top:55%;right:10%;opacity: .3}
 			#homageNote{top:80%;right:22%;}
 			#homageNote1{top:19%;right:11%;}
 			#homageNote2{top:10%;right:10%;}
 			#homageNote3{top:9%;right:25%;}
+			#alphabetNote{top:55%;right:5%;opacity:.3;}
+			#alphabetNote1{top:45%;right:10%;opacity:.3;}
+			#alphabetNote2{top:50%;right:15%;opacity:.3;}
+			#murielNote{top:438px;right:11.2%;}
+			#murielNote1{top:540px;right:20%;}
+			#murielNote2{top:336px;right:20%;}
+			#murielNote3{top:60%;right:66%;opacity:.3;}
+			#graphisNote{top:132px;right:12%;}
+			#graphisNote1{top:327px;right:7%;}
+			#graphisNote2{top:400px;right:12%;}
+			#utcNote{top:228px;right:10%;}
+			#utcNote2{top:428px;right:10%;}
+			#utcNote3{top:628px;right:10%;}
+			#leoNote{top:558px;right:19%;}
+			#toiletNote{top:40%;right:12%;opacity:.3;}
+			#toiletNote1{top:60%;right:5%;opacity:.3;}
+			#diaryNote{top:558px;right:30%;}
+			#diaryNote2{top:478px;right:17%;}
+			#diaryNote3{top:489px;right:5%;}
+			#diaryNote4{top:366px;right:20%;}
+
+
 
 		.inNote{padding:5px;text-align: left;width:90px;font-family: "Trebuchet MS"; font-size: 9pt;}
+
+	a.try:link {
+    color:magenta;
+    background-color:transparent;
+    text-decoration:none;
+    transition: color 0.5s ease;
+    }a.try:visited {
+    color:magenta;
+    background-color:transparent;
+    text-decoration:none;
+    }a.try:hover {
+    color:rgb(255,0,0);
+    background-color:transparent;}
+    a.try.magenta{color:cyan; transition: color 0.5s ease;}
+
+    a.toTop{
+    	color:white;background-color: transparent;
+    	text-decoration: none;}
 	
 	
 
@@ -98,21 +178,196 @@
   
 </head>
 <body>
+
+<div class="top"><a class="toTop" href = "#front">^</a></div>
+
  
-<div class="front">
+<div class="front" id="front">
 <div class="logo">
-<a href="http://hksun93.github.io/FinalProject/index2"> 
+<a class="logo" href="http://hksun93.github.io/FinalProject/index2"> 
 <img src="http://students.risd.edu/students/hsun01/AliceSun.gif" width="90px"></a>
 </div>
 </div>
+
+<div class="things">
+<div id="note" class="notes"><div class="inNote">Alice Sun ? : click the logo</div>
+</div>
+	<div id="note0" class="thum"><a href = "#work"><img src="http://students.risd.edu/students/hsun01/0.zero.jpg"></a></div>
+	<div id="note1" class="thum"><a href = "#work1"><img src="http://students.risd.edu/students/hsun01/1.abyss.jpg"></a></div>
+	<div id="note2" class="thum"><a href = "#work2"><img src="http://students.risd.edu/students/hsun01/2.homage.jpg"></a></div>
+	<div id="note3" class="thum"><a href = "#work3"><img src="http://students.risd.edu/students/hsun01/3.alphabet.jpg"></a></div>
+	<div id="note4" class="thum"><a href = "#work4"><img src="http://students.risd.edu/students/hsun01/4.koar.jpg"></a></div>
+	<div id="note5" class="thum"><a href = "#work5"><img src="http://students.risd.edu/students/hsun01/5.murielNote1.jpg"></a></div>
+	<div id="note6" class="thum"><a href = "#work6"><img src="http://students.risd.edu/students/hsun01/6.graphis.jpg"></a></div>
+	<div id="note7" class="thum"><a href = "#work7"><img src="http://students.risd.edu/students/hsun01/7.utcNote3.jpg"></a></div>
+	<div id="note8" class="thum"><a href = "#work8"><img src="http://students.risd.edu/students/hsun01/8.leo.jpg"></a></div>
+	<div id="note9" class="thum"><a href = "#work9"><img src="http://students.risd.edu/students/hsun01/9.toilet.jpg"></a></div>
+	<div id="note10" class="thum"><a href = "#work10"><img src="http://students.risd.edu/students/hsun01/10.diary.jpg"></a></div>
+
+	
+</div>
+
+<div id="work10" class="portfolio">
+	<div id="discription" class="ui">
+	<div class="wordss">
+	<p class="blah">Title: Diary</p>
+	<p class="blah">Used: Sublime Text</p>
+	<p class="blah">Description: This is the Score project that was done in 2015 Relational Design, under Dinah Fried's guidance. Instruction --- (1) Click the black area on the left, as many times as you want. (2) Write your own diary with the words you got. (3) The length, mood, subject, or changing present tense to past tense is all up to you (and you don’t have to repeat the word that gets repeated).  </p>
+	<p class="blah">The main subject of this website is empathy. Left side of the webpage is filled with Alice's personal diary during 2015, without nouns. It is also not following the proper translation order, through fragmentation. The performer eventually goes through the process of recalling his or her ideas, experiences and memories in order to connect himself or herself with the word he or she got. Via this process, both of the performer and the composer(Alice) can realize that he or she is not the only one who goes through this certain emotion, idea, or moment in life. <a class="try"href="http://hksun93.github.io/diary">Try it!!!</a>
+	</div>
+	<div class="words"></div>	
+</div>
+<div id="ThisWork" class="ui">
+	 <div id="object10" class="ui"><img src="http://students.risd.edu/students/hsun01/10.diary.jpg" width="400px"></div>
+</div>
+<div id="diaryNote4" class="notes"><img src="http://students.risd.edu/students/hsun01/10.diaryNote4.jpg"></div>
+<div id="diaryNote3" class="notes"><img src="http://students.risd.edu/students/hsun01/10.diaryNote3.jpg"></div>
+<div id="diaryNote2" class="notes"><img src="http://students.risd.edu/students/hsun01/10.diaryNote2.jpg"></div>
+<div id="diaryNote" class="notes"><img src="http://students.risd.edu/students/hsun01/10.diaryNote.jpg"></div>
+</div>
+
+
+<div id="work9" class="portfolio">
+	<div id="discription" class="ui">
+	<div class="wordss">
+	<p class="blah">Title: Priceless Toilet</p>
+	<p class="blah">Used: Sublime Text</p>
+	<p class="blah">Description: This is the Opinion project that was done in 2015 Relational Design, under Dinah Fried's guidance. It displays scanned images of the survey that was done in Providence Place Mall, during March 7,2015(from 2pm to 5pm) by Alice Sun.  </p>
+	<p class="blah">Providence is a quite academic place, which has RISD and Brown; and they often share conceptual ideas in many criteria. It’s definitely a positive phenomenon, yet there’s also a risk to be trapped in a closed world. It’s easy for them to ignore those who aren’t in this world, because they are “privileged” artists and technologists. Thus, Alice did a survey with the subject "Marcel Duchamp's Fountain" at Providence Place Mall, which isn’t particularly filled with educated or academic people. Then she scanned the survey and rearranged in this form, allowing viewers to compare three sets of opinions. Through this form, these voices can interact with each other, and sometimes can be the answer to one another. <a class="try" href="http://hksun93.github.io/Project00/">Try it!!!</a>
+	</div>
+	<div class="words"></div>	
+</div>
+<div id="ThisWork" class="ui">
+	 <div id="object9_1" class="ui"><img src="http://students.risd.edu/students/hsun01/9.toilet1.jpg" width="400px"></div>
+	 <div id="object9" class="ui"><img src="http://students.risd.edu/students/hsun01/9.toilet.jpg" width="400px"></div>
+</div>
+
+</div>
+
+
+<div id="work8" class="portfolio">
+	<div id="discription" class="ui">
+	<div class="wordss">
+	<p class="blah">Title: Leo</p>
+	<p class="blah">Used: Textwrangler</p>
+	<p class="blah">Description: Leo was done in 2013 Web Workshop. It is inspired by Leo constenllation and based on the real form of it. The purpose of this study was to explore different visualization depending on the alteration of window size.   </p>
+	<p class="blah">The website visualizes four different compositions and color combinations by varying window size. <a class="try" href="http://hksun93.github.io/leo">Try it!!!</a>
+	</div>
+	<div class="words"></div>	
+</div>
+<div id="ThisWork" class="ui">
+ <div id="object8" class="ui"><img src="http://students.risd.edu/students/hsun01/8.leo.jpg" width="400px"></div>
+</div>
+<div id="leoNote" class="notes"><img src="http://students.risd.edu/students/hsun01/8.leoNote.jpg"></div>
+</div>
+
+
+<div id="work7" class="portfolio">
+	<div id="discription" class="ui">
+	<div class="wordss">
+	<p class="blah">Title: UTC Timezone</p>
+	<p class="blah">Software: Adobe Illustrator, Indesign</p>
+	<p class="blah">Description: UTC Timezone (folderable) Map was done in 2014 Making Meaning class under Lucinda Hitchcock's guidance. It  visualizes world map only through UTC Timezone division, with the names of well known cities in order to provide a better sense of location. Although it is usually kept flat, it can be folded or be bent; and in that case, those borders that go across another timezone will be bulge out. The poster also focuses on those "bulge out" parts, with some information about UTC Timezone. </p>
+	<p class="blah">Alice's initial approach of this mapping project grew out from her previous work during freshman year: What is time?; Is time a logical thing?; How certain rules or standards were built? UTC Timezone is the good example that tried to be rational but eventually became out of control, due to political or geographical factors. Originally, UTC timezones tend to follow longitude, although none of them fully follows it. This irregular image of time, which people depend on doubtlessly, intrigued Alice.</p>
+	</div>
+	<div class="words"></div>	
+</div>
+<div id="ThisWork" class="ui">
+ <div id="object7_1" class="ui"><img src="http://students.risd.edu/students/hsun01/7.utc2.jpg" width="400px"></div>
+ <div id="object7" class="ui"><img src="http://students.risd.edu/students/hsun01/7.utc.jpg" width="400px"></div>
+</div>
+<div id="utcNote" class="notes"><img src="http://students.risd.edu/students/hsun01/7.utcNote.jpg"></div>
+<div id="utcNote2" class="notes"><img src="http://students.risd.edu/students/hsun01/7.utcNote2.jpg"></div>
+<div id="utcNote3" class="notes"><img src="http://students.risd.edu/students/hsun01/7.utcNote3.jpg"></div>
+</div>
+
+
+<div id="work6" class="portfolio">
+	<div id="discription" class="ui">
+	<div class="wordss">
+	<p class="blah">Title: Graphis Poster</p>
+	<p class="blah">Software: Adobe Photoshop, Indesign</p>
+	<p class="blah">Description: This project was done in History of Grophic Design 2014 class by Douglas Scott, under Michael McDermott's guidance. The class was mostly lecture-based by Doug, and two different topics were given for each student to make one timeline accordian book and one poster.  </p>
+	<p class="blah">This a 17 in. x 34 in. poster about Graphis Magazine and its founder, Walter Herdeg. Walter Herdeg always aimed to explain abstract facts or functions through visual expression; no wonder, his magazines also appear to collect various works of art from all criteria with the same purpose. Based on this information, Alice decided to create "space" in the poster, which is also an abstract subject, by collaging some images from the magazines. The main stage is filled with an essay about Graphis Magazine and Walter Herdeg written by Alice.</p>
+	</div>
+	<div class="words"></div>	
+</div>
+<div id="ThisWork" class="ui">
+ <div id="object6" class="ui"><img src="http://students.risd.edu/students/hsun01/6.graphis.jpg" width="400px"></div>
+</div>
+<div id="graphisNote" class="notes"><img src="http://students.risd.edu/students/hsun01/6.graphisNote.jpg"></div>
+<div id="graphisNote1" class="notes"><img src="http://students.risd.edu/students/hsun01/6.graphisNote1.jpg"></div>
+<div id="graphisNote2" class="notes"><img src="http://students.risd.edu/students/hsun01/6.graphisNote2.jpg"></div>
+</div>
+
+
+<div id="work5" class="portfolio">
+	<div id="discription" class="ui">
+	<div class="wordss">
+	<p class="blah">Title: Muriel Cooper Timeline</p>
+	<p class="blah">Software: Adobe Photoshop, Indesign</p>
+	<p class="blah">Description: This project was done in History of Grophic Design 2014 class by Douglas Scott, under Michael McDermott's guidance. The class was mostly lecture-based by Doug, and two different topics were given for each student to make one timeline accordian book and one poster.  </p>
+	<p class="blah">This is an accordian book that visualizes Muriel Cooper's life in three categories: life, art/design, and historical. Each category is marked with one of RGB colors; life events were marked with red, art/design events with green, and historical events with blue. Many times these events influenced one another, and in these cases a color gradient was applied. The overall design was originated from Muriel Coooper's life itself, which was dedicated for graphic design, especially as one of the earliest designer who actively used computer technology.</p>
+	</div>
+	<div class="words"></div>	
+</div>
+<div id="ThisWork" class="ui">
+ <div id="object5_1" class="ui"><img src="http://students.risd.edu/students/hsun01/5.muriel1.jpg" width="400px"></div>
+ <div id="object5" class="ui"><img src="http://students.risd.edu/students/hsun01/5.muriel.jpg" width="400px"></div>
+</div>
+<div id="murielNote" class="notes"><img src="http://students.risd.edu/students/hsun01/5.murielNote.jpg"></div>
+<div id="murielNote1" class="notes"><img src="http://students.risd.edu/students/hsun01/5.murielNote1.jpg"></div>
+<div id="murielNote2" class="notes"><img src="http://students.risd.edu/students/hsun01/5.murielNote2.jpg"></div>
+<div id="murielNote3" class="notes"><div class="inNote">I love screened colors</div></div>
+</div>
+
+
+<div id="work4" class="portfolio">
+	<div id="discription" class="ui">
+	<div class="wordss">
+	<p class="blah">Title: KOAR</p>
+	<p class="blah">Software: Adobe Photoshop, Indesign, Illustrator, Premiere Pro</p>
+	<p class="blah">Description: This is a rebranding project that was done in Franz Werner's Form and Communication class 2013. </p>
+	<p class="blah">KOAR is a short term of Korean Air, which is one of the well known transportation companies, especially in Korea. During the rebranding process, Alice focused on what can truly represent Korean identity. Through some combinations of cultural colors from its nature, geometric shapes of Hangul - Korean alphabet - and traditional patterns, KOAR was created.  </p>
+	</div>
+	<div class="words"></div>	
+</div>
+<div id="ThisWork" class="ui">
+ <div id="object4_3" class="ui"><img src="http://students.risd.edu/students/hsun01/4.koar3.jpg" width="400px"></div>
+ <div id="object4_2" class="ui"><img src="http://students.risd.edu/students/hsun01/4.koar2.jpg" width="400px"></div>
+ <div id="object4_1" class="ui"><img src="http://students.risd.edu/students/hsun01/4.koar1.jpg" width="400px"></div>
+ <div id="object4" class="ui"><img src="http://students.risd.edu/students/hsun01/4.koar.jpg" width="400px"></div>
+</div>
+
+</div>
+
+
+<div id="work3" class="portfolio">
+	<div id="discription" class="ui">
+	<div class="wordss">
+	<p class="blah">Title: Human Alphabet</p>
+	<p class="blah">Software: Adobe Photoshop</p>
+	<p class="blah">Description: Human alphabet was done in Franz Werner's sophomore workshop session. The main theme for the assignment was to create alphabet in a new form.</p>
+	<p class="blah">Two people's fingers and black nail polish were used as mediums. After that they were adjusted and cropped with Photoshop. Alice thanks to Jihyun Kim for providing extra fingers.</p>
+	</div>
+	<div class="words"></div>	
+</div>
+<div id="ThisWork" class="ui">
+ <div id="object3" class="ui"><img src="http://students.risd.edu/students/hsun01/3.alphabet.jpg" width="400px"></div>
+</div>
+<div id="alphabetNote" class="notes"><div class="inNote">flesh --- color</div></div>
+<div id="alphabetNote1" class="notes"><div class="inNote">structure --- BW</div></div>
+<div id="alphabetNote2" class="notes"><div class="inNote">body as a colorless landscape</div></div>
+</div>
+
 
 <div id="work2" class="portfolio">
 	<div id="discription" class="ui">
 	<div class="wordss">
 	<p class="blah">Title: Homage to Oscar Niemeyer</p>
 	<p class="blah">Software: Rhino 3D</p>
-	<p class="blah">Description: What's the border between fine art and design? Under the guidance of professor Kai Franz, students were asked to do figure croquis with Rhino 3D. Rhino 3D is a software that is generally used for industrial design or architecture, however, Kai broken that boundary and allowed Alice to experience digital art in a new way. After that, instead of painting, which she was originally planing to major in, she decided to go for graphic design; because she found a infinite possibilities in using computer not only as a mere tool, but also as the most flexible medium.</p>
-	<p class="blah">The process simply begined with selecting and researching about any modern architect; in Alice's case, Oscar Niemeyer. The next step that Kai asked students was to choose a certain architecture by the architect and reinterpret it. Alice chose to work on Oscar Niemeyer Museum, which is characterized by its unique eye-like geometric shape.</p>
+	<p class="blah">Description: What's the border between fine art and design? Under the guidance of professor Kai Franz, students were asked to do figure croquis with Rhino 3D. Rhino 3D is a software that is generally used for industrial design or architecture, however, Kai broken that boundary and allowed Alice to experience digital art in a new way. After that, instead of painting, which she was originally planing to major in, she decided to go for graphic design; because she found infinite possibilities in using computer- not only as a mere tool, but also as the most flexible medium.</p>
+	<p class="blah">The process simply begined with selecting and researching about any modern architect; in Alice's case, Oscar Niemeyer. The next step was to choose a certain architecture by the architect and reinterpret it. Alice chose to work on Oscar Niemeyer Museum, which is characterized by its unique eye-like geometric shape.</p>
 	</div>
 	<div class="words"></div>	
 </div>
@@ -125,15 +380,15 @@
 <div id="homageNote1" class="notes"><img src="http://students.risd.edu/students/hsun01/2.homageNote1.jpg"></div>
 <div id="homageNote2" class="notes"><img src="http://students.risd.edu/students/hsun01/2.homageNote2.jpg"></div>
 <div id="homageNote3" class="notes"><img src="http://students.risd.edu/students/hsun01/2.homageNote3.jpg"></div>
-
 </div>
+
 
 <div id="work1" class="portfolio">
 	<div id="discription" class="ui">
 	<div class="wordss">
 	<p class="blah">Title: Self Portrait</p>
 	<p class="blah">Software: Rhino 3D, Adobe Illustrator CS</p>
-	<p class="blah">Description: What's the border between fine art and design? Under the guidance of professor Kai Franz, students were asked to do figure croquis with Rhino 3D. Rhino 3D is a software that is generally used for industrial design or architecture, however, Kai broken that boundary and allowed Alice to experience digital art in a new way. After that, instead of painting, which she was originally planing to major in, she decided to go for graphic design; because she found a infinite possibilities in using computer not only as a mere tool, but also as the most flexible medium.</p>
+	<p class="blah">Description: What's the border between fine art and design? Under the guidance of professor Kai Franz, students were asked to do figure croquis with Rhino 3D. Rhino 3D is a software that is generally used for industrial design or architecture, however, Kai broken that boundary and allowed Alice to experience digital art in a new way. After that, instead of painting, which she was originally planing to major in, she decided to go for graphic design; because she found infinite possibilities in using computer- not only as a mere tool, but also as the most flexible medium.</p>
 	<p class="blah">3D file that scanned head to upper body was given to every student in the class (how is done is Kai's secret), then we're asked to make self portrait out of it. Self portrait was always an interesting subject to Alice. She thinks it requires a process of look deep inside of oneself - into the abyss that everyone has.</p>
 	</div>
 	<div class="words"></div>	
@@ -154,7 +409,7 @@
 	<div class="wordss">
 	<p class="blah">Title: Collage "Zero-gravity"</p>
 	<p class="blah">Software: Rhino 3D, Adobe Illustrator CS</p>
-	<p class="blah">Description: What's the border between fine art and design? Under the guidance of professor Kai Franz, students were asked to do figure croquis with Rhino 3D. Rhino 3D is a software that is generally used for industrial design or architecture, however, Kai broken that boundary and allowed Alice to experience digital art in a new way. After that, instead of painting, which she was originally planing to major in, she decided to go for graphic design; because she found a infinite possibilities in using computer not only as a mere tool, but also as the most flexible medium.</p>
+	<p class="blah">Description: What's the border between fine art and design? Under the guidance of professor Kai Franz, students were asked to do figure croquis with Rhino 3D. Rhino 3D is a software that is generally used for industrial design or architecture, however, Kai broken that boundary and allowed Alice to experience digital art in a new way. After that, instead of painting, which she was originally planing to major in, she decided to go for graphic design; because she found infinite possibilities in using computer- not only as a mere tool, but also as the most flexible medium.</p>
 	<p class="blah">As a final form, all the 8 croquis were used to create a 24 in. x 34 in. collage poster. It went through three fundamental process that she found through her RISD foundation year, which is 'understanding-deconstructing-reconstructing' a subject.  The experience of discovering the new aspects of digital art became her 'understanding' part, and via 'deconstructing' and 'reconstructing' those existing images, she ended up with this abstract collage. It contains her idea of how digital mediums are eligible of liberating artists from numerous limitations, from 'gravity' = realistic obstacles. </p>
 	</div>
 	<div class="words"></div>	
@@ -176,12 +431,20 @@
    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script>
+
+  setInterval(function() {
+    $('a.try').toggleClass('magenta');},700);
+
   $(function() {
-    $( ".ui" ).draggable();
+    $( ".ui" ).draggable({ containment: "body", scroll: false });
   });
   $(function() {
-    $( ".notes" ).draggable();
+    $( ".notes" ).draggable({ containment: "body", scroll: false });
   });
+  $(function() {
+    $( ".thum" ).draggable({ containment: "body", scroll: false });
+  });
+
   </script>
 
 </body>
