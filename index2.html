@@ -7,64 +7,164 @@
   <style>
 
 
-	body{margin:0;border:0;padding:0;height:100%;background-color: black}
-   
-   	.front{
-   	display: table-cell;
+  body{margin:0;border:0;padding:0;background-color: white;}
+
+    .front{
+    display: table-cell;
     background-color:black;
     height:100vh;
     width: 500vh;
     vertical-align: middle;
     text-align: center;
-	}
+    z-index: 2
+  }
+  
+  .logo{display: inline-block;text-align: center;}
 
-	.logo{display: inline-block;text-align: center;}
+  .portfolio{
+    height: 1000px;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+  }
+  
 
-	.diary > * {
-  display: inline-block;
-  margin: 0 0.15em; 
-  transition: color 0.5s ease;
-}
+    .words{
+    position: absolute;
+    display: inline-block;
+    left: 100px;
+    top: 100px;
+    opacity: .5;
+    background-color: white;
+    width: 400px; height: 500px;
+    z-index: 1;}
 
-.diary{font-family: monospace;position:absolute;left:10px;top:10px;width:400px;line-height: 1.5;}
+  p.info{direction: rtl;text-indent: 0;}
 
-	</style>
+  .wordss{
+    position: absolute;
+    display: inline-block;
+    left: 100px;
+    top: 100px;
+    width: 400px; height:400px;
+    z-index: 2;
+    
+  }
 
+      .contact{
+    position: absolute;
+    display: inline-block;
+    left: 1px;
+    top: 1px;
+    opacity: .7;
+    background-color: white;
+    width: 200px; height: 180px;
+    z-index: 1;}
+
+  .contactss{
+    position: absolute;
+    display: inline-block;
+    left: 1px;
+    top: 1px;
+    width: 200px; height:200px;
+    z-index: 2;
+    
+  }
+
+  p.blah{padding-left: 25px; padding-top: 15px; padding-right: 25px; font-family: "Trebuchet MS"; font-size: 9pt; line-height: 150%;color:rgba(0,0,0,1);}
+  p.info{padding-left: 25px; padding-right: 25px; padding-bottom: 15px; font-family: "Trebuchet MS"; font-size: 9pt; line-height: 150%;color:rgba(0,0,0,1);}
+
+  p.essay{padding-left: 25px; padding-right: 25px;font-family: "Trebuchet MS"; font-size: 9pt; line-height: 150%;color:rgba(0,0,0,1);} 
+
+  .ui,.notes{cursor:move;position: absolute;display:inline-block;}
+
+    .notes img{width:100px;position:relative;} 
+    .notes,.thum{
+      width:100px;height:100px;border: 1px solid rgb(100,100,100); 
+      overflow:hidden; position: absolute;text-align: 
+      center;background-color: white;display: block;
+      }
+      #note{top:83%;right:2%;opacity: .3;}
+      #note0{top:10px;right:90%;}#note0 img{width:100px;}
+      #note1{top:115px;right:90%;}#note1 img{width:100px;}
+      #discription{top:10px;right:89%;}
+      #discription2{top:0px;right:48%;}
+
+
+    .inNote{padding:5px;text-align: left;width:90px;font-family: "Trebuchet MS"; font-size: 9pt;}
+
+    a.try:link {
+    color:black;
+    background-color:transparent;
+    text-decoration:none;
+    transition: color 0.5s ease;
+    }a.try:visited {
+    color:black;
+    background-color:transparent;
+    text-decoration:none;
+    }a.try:hover {
+    color:rgb(255,0,0);
+    background-color:transparent;}
+
+
+
+  </style>
+
+  
 </head>
 <body>
-<div class="front">
+
+<div class="front" id="front">
 <div class="logo">
-<a href="http://hksun93.github.io/FinalProject/"> 
+<a class="logo" href="http://hksun93.github.io/FinalProject/index"> 
 <img src="http://students.risd.edu/students/hsun01/AliceSun2.gif" width="90px"></a>
 </div>
 </div>
-<div class="diary"></div>
 
-<script src="http://code.jquery.com/jquery-2.1.3.min.js">
-    </script>
-    <script>
-    var text = '/ January 4 2015 last. last. lonely. spend. how. push. has. been. see. good. stop. come. wish. because. depart. too. sad. die. somehow. since. snow. with. go. buy. open. keep. fall. complain. laugh. go. in. cheerful. make. eat. eat. very. good. that. one. white. grab. cold. and. twinkle. keep. think. cry. and. why. last. end. lonely. spend. depart. with. also. depart.  from. continue. don’t know. think. to. accept. expect. good. no. rely. cry. no. just. more. worry. this. helpless. what. great. live. at. alone. useless. do. dominant. one. grab. can’t. what. good. become. can. be. don’t. know. ironically. this. tired. most. relieve. is. often. go. find. one. say. young. to. now. that. abiding. for. be. stubborn. don’t. have. to. good. mean. to. change. new. discover. and. accept. don’t. fear. your. own. in. various. various. express. if. can. that. is. humane. in. very. colorful. exist. aware. monochromatic. make. don’t. no matter. want. or. want. don’t. swept. change. have to. big. become. is. colorful. if. now. come. out. suppress. to. front. go. show. want. / January 13 2015 eventually. daily. weird. flow. skip. about. shitty. like. slushy. swim. out. and. just. sink. down. feel. like. won’t. use. am. sick. of. just. instead. of. passionate. disgusted. full. fill. about. say. good. that. being. lazy. while. Korean. go. in. want. think. of course. like. now. lazy. as. can’t. become. Korean. seem. like. Korean. full. think. all. in. most. noticeable. shout. some. colorful. mixed. like. very. alike. think. time. and. time. often. rummage. look. at. are. very. pretty. realize. little. more. carefully. cherish. should. have. think. at. that. if. do. break. what. should. in. that. just. expect. to. be. break. weird. conclude. then. no. may. be. short. wear. in. play. as. much. as. want. want. talk. want. do. all. do. be. honest. think. serious. meet. if. different. be. shy. fluttering. wear. pack. together. go. instead. more. romantic. romantic. if. do. more. lot. hide. if. no. with. useless. show. no. even. show. don’t. will. wrong. recently. suffocating. feel. untied. no. / February 14 2015 is. awkward. soon. used to. is. scary. some. get. overlapped. don’t care. and. play. remember. at. get. overlapped. pretty. play. don’t. wintery. mostly. why. repeatedly. pull. out. don’t. know. some. are. dramatic. light. up. your. set. if. there. is. now. is. that. little. even. warm. feel. as. much. as. cold. and. that. set. on. is. too. easy. and. ordinary. in. put. at. bloom. much. as. hot. and. steamy. ride. and. go. as. much. as. go. most. far. sweaty. become. and. lighted. different. from. that. dazed. burning. your. your. unimportant. and. serious. at. attached. together. terrible. spread. melting. is. like. breaking. / February 21 2015 abandoned. than. more. pathetic. is. wandering. am. yet. kicked out. not. guess. many. upload. mostly. and. about. are. this. after. read. are. all. same. precisely. at. this. write. ago. only. few. ago. look. dazed. be. then. really. bear. can’t. from. no. from. leave. how. much. to. curse. however. recently. that. empty. or. that. even. console. just. feel. special. and. only. think. somewhat. empty. come. out. really. all. trying. pathetic. this. more. love. want. to. make. is. don’t. know. but. romantic. sound. is. this. is. last. so. pretty. stop. smell. want. first. first. well. imagine. can’t. of. have to. understand. after. feel. is. keep. collapsing. to. come. very. romantic. and. my. is. failed. / March 15 2015 afraid. but. good. until. in. somehow. fall. in. meet. this. from. slowly. soaking. at. spread. like. at. there. is. a. what. smooth. is. before. little. smaller. like. there. is. a. is. heavy. solid. just. beside. lay. across. go. doesn’t. is. inside. little. weird. at. grow. seem. like. go. through. and. illuminate. well. growing. is. running. is. white. and. some. gray. and. that. is. around. blow. and. running. hectic. is. just. weak. runaway. may. this. is. really. interesting. around. especially. break. as. if. hug. when. like. just. be. broken. wish. just. bite. wish. that. much. tired. and. tired. say. and. again. am. fragile. upon. standing. at. this. my. tiring. make. is. true. and. be. nervous. pushed. by. all. give up. / March 26 2015 around. busy. run. young. like. sometimes. pretty. as. but. my. dark. show. leave. like. become. heavy. like. and. and. kiss. smile. when. bend. and. both. make. is. pretty. hug. hold. and. at. abstractedly. stare. like. the. most. useless. and. random. then. seriously. talk. and. get. watery. care. say. sometimes. bite. will. seem. is. been. don’t see. few. pass. but. little. miss. always. reach. at. be. / April 4 2015 why. again. do. this. where. provocative. seek. live. endlessly. provocative. be. can. is. now. reflect. do. how. much. broken. is. show. broken. too. negative. how. much. from. far. is. show. to. correct. all. know. if. all. see. if. love. will. or. capricious. boil. is. most. wandering. is. actually. now. even. as. give. and. eaten. be. pretty. following. hot. reach. cold. dazzling. spinning. orange. inside. stumbling. or. too. steamy. so. from. drop. like. those. too. good. actually. now. even. eaten. broken. certainly. bad. some. broken. more. beautifully. twinkle. look. also. already. breaking. are. those. sometimes. frightening. are. say. is. frightening. worn. become. meet. regretful. frighten. ever. never. yet. nervous. am. ultimately. is. eaten. is. too. easily. that. throw. don’t. please. look. again. miss. make. / April 10 2015 since. hate. my. is. insufficient. because. through. slip. out. are. that. all. leave. then. throw. is. sentimental. / April 16 2015 like. isn’t. patted. was. was. first. thus. was. special. and. keep. will. be. will. natural. isn’t. say. first. because. nervous. get. easily. change. to. warm. is. cold. than. more. frightening. older. as. rely. as. much. as. stable. no. realize. all. fragile. also. whole. for. and. inside. lived. all. inside. soft. with. live. is. know. should. if. not. none. step. can’t. other. many. as. to. fall. to. did. totally. soaked. sometimes. suffocated. messy. as. flounder. to. decided. erase. just. lead. as.';
-  
+<div id="note" class="notes"><div class="inNote">Alice Sun ? : click the logo</div>
+</div>
+  <div id="note0" class="thum"><a href = "https://www.facebook.com/sunnygyong"><img src="https://scontent-lga.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10968454_10205015307036404_6610804822046920312_n.jpg?oh=039e2f2253b8a21cb4a1b7f5d3e582f4&oe=55D6C3CC"></a></div>
+  <div id="note1" class="thum"><a href = "https://soundcloud.com/aliceeesun"><img src="https://i1.sndcdn.com/artworks-000079831880-mjfjnv-t500x500.jpg"></a></div>
 
-    var text = text.replace(/\./g, '');
-    var array = text.split(' ');
-    for(var i = 0; i < array.length; i++) {
-  var word = array[i];
-  var html = '<w-' + word + '>' + word + '</w-' + word + '>';
-  array[i] = html;
-  }
-    text = array.join('');
+  <div id="discription" class="ui">
+<div class="contactss">
+  <p class="blah">Contact<br>
+  Email: hsun01@risd.edu<br>Phone #: 401-440-0470<br>
+  <p class="info"><a class="try"href="https://www.behance.net/alicehgsun">Behance</a>
+  <br><a class="try"href="https://www.behance.net/alicehgsun">Resume</a>
+  </div>
+  <div class="contact"></div>
+  </div>
 
-    $('.diary').append(text);
-    $('.diary > *').click(function() {
-    var tag = $(this).prop('tagName');
-    $(tag).css('color', 'white');
-    });
+    <div id="discription2" class="ui">
+<div class="wordss">
+  <p class="blah">Alice Sun</p>
+  <p class="blah">Alice’s real name isn’t really Alice, her actual full name is Hee Gyung Sun, which is pretty hard to pronounce. It’s been around 7 years that she has been using this “fake” name, since she left her homeland at the age of 14... and now she’s a junior at RISD, in GD department. She’s quite satisfied with her major, which sounds cool like G-dragon, and doesn’t have to worry so much about documentation and storage of works.<br>
+  <p class="essay">Apparently, Alice likes keeping things; whatever that is, such as her works, process of works, doodles, important notes, useless notes, emotions, and memories..etc. The saddest thing to her is something that’s being forgotten, thus disappear. She believes that as long as something/somebody exists in one’s memory, it doesn’t get removed from this world.</p>
+  <p class="essay">That’s probably the reason why she made this website; or why she included her diary since her high school senior year in this page. She doesn’t write diary regularly, but use it as a trash can to emptying out her emotions and thoughts. She realized that those things are ugly at the first place, but turns into a something valuable when she revisit them later.</p>
+  </div>
+  <div class="words"></div>
+  </div>
 
+ 
+   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
 
+  setInterval(function() {
+    $('a.try').toggleClass('magenta');},700);
 
-    </script>
+  $(function() {
+    $( ".ui" ).draggable({ containment: "body", scroll: false });
+  });
+  $(function() {
+    $( ".notes" ).draggable({ containment: "body", scroll: false });
+  });
+  $(function() {
+    $( ".thum" ).draggable({ containment: "body", scroll: false });
+  });
 
+  </script>
 
 </body>
 </html>
