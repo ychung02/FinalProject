@@ -1,6 +1,5 @@
 # AliceSun2015
 <p>http://hksun93.github.io/FinalProject.</p>
-Final Project- Compose a draft of FinalProject proposal in README.md of your FinalProject repo on GitHub. 
 
 - FinalProject will be my personal website, which presents “creative documentation” of my ideas.
 - While taking one of the digital media class during wintersession, I was required to make “creative documentation” of all the works I made in the class.
